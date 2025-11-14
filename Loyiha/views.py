@@ -16,3 +16,6 @@ def Navigation(request):
 
 def footer(request):
     return render(request, 'footer.html')
+
+def orta(request):
+    return render(request, 'orta.html')
