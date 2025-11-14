@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+</style>
+<body>
+    
+      <header class="bg-black/90">
+        <div style="transform: translateX(-300px); transition: 1s;" class="menu w-[300px] h-screen bg-black absolute p-[10px] text-white">
+          <i class="fa-solid fa-xmark text-white text-[20px] absolute top-[10px] right-[10px]"></i>
+
+          <h1>home</h1>
+          <h1>about</h1>
+          <h1>Contact Us</h1>
+        </div>  
+      <div class=" max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <img src="https://assets.nicepagecdn.com/d2cc3eaa/6538925/images/smart-home-logo.png" alt="logo" class="w-12 h-12"/>
+        <div class="flex items-center space-x-4">
+          <nav class="hidden md:flex space-x-8 text-sm font-semibold text-white">
+            <a href="#" class="hover:underline">HOME</a>
+            <a href="#" class="hover:underline">PAGES</a>
+            <a href="#" class="hover:underline">CONTACT US</a>
+          </nav>
+        </div>
+
+      <i class="bar fa-solid fa-bars text-white text-[20px] "></i>
+        <div class="hidden md:block">
+          <a href="tel:+1234567890" class="inline-flex items-center bg-pink-500 px-4 py-2 rounded-full text-white font-bold shadow">
+            <svg class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M22 16.92V21a1 1 0 0 1-1.11 1 19.86 19.86 0 0 1-8.63-3.19 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2 3.11 1 1 0 0 1 3 2h4.09a1 1 0 0 1 1 .75c.12.7.33 1.37.62 2.01a1 1 0 0 1-.25 1.02L7.91 8.91a16 16 0 0 0 6 6l1.13-1.13a1 1 0 0 1 1.02-.25c.64.29 1.31.5 2.01.62a1 1 0 0 1 .75 1V21z"/></svg>
+            +1 (234) 567-8910
+          </a>
+        </div>
+
+        <!-- моб меню для узких экранов -->
+        <div class="md:hidden">
+          <button id="mobile-menu-btn" class="px-2 py-1 border rounded">menu</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- основной блок контента -->
+ 
+
+    <!-- Footer      -->
+
+
+    <script>
+      let bar = document.querySelector(".bar")
+      let xmark = document.querySelector(".fa-xmark")
+      let menu = document.querySelector(".menu")
+      bar.addEventListener("click", () => {
+        menu.style.cssText = "transform: translateX(0); transition: 1s;"
+      })
+      xmark.addEventListener("click", () => {
+        menu.style.cssText = "transform: translateX(-300px); transition: 1s;"
+      })
+    </script>
+   
+</body>
+</html>

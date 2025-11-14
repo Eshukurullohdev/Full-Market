@@ -1,0 +1,245 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<!-- Rayhona -->
+ <div class="bg-[#dbb5c0] flex md:flex-row items-center ">
+
+    <div class="flex flex-col md:flex-row gap-[40px] items-center">
+      {% for malumotlar in malumotlar %}
+
+      <img src="{{malumotlar.rasm.url}}" 
+           alt=""
+           class="w-[250px] h-[250px]  object-cover rounded-md">
+
+      <div class="text-center md:text-left mt-5 md:mt-0">
+        <div class="flex flex-col md:flex-row items-center md:items-start  md:justify-start">
+          <img src="https://assets.nicepagecdn.com/d2cc3eaa/6538925/images/2163300.png" 
+               alt=""  
+               class="w-[50px] h-[50px] mt-[20px] md:mt-[95px] mx-auto md:mx-0">
+          <div class="md:ml-4">
+            <h1 class="mt-2 md:mt-[100px] text-[20px] md:text-[23px] font-bold">20M+ Users</h1>
+            <p class="text-[16px] md:text-[20px] font-thin">
+              Read Our
+              <a href="#" class="underline">Successful Stories</a>
+            </p>
+          </div>
+        </div>
+
+        <h1 class="text-[28px] md:text-[48px] font-bold my-5 leading-tight">
+          {{ malumotlar.tavsif }}
+        </h1>
+
+        <p class="text-[15px] md:text-[16px]">
+          {{ malumotlar.haqida }} <a href="#" class="underline underline-offset-2">Freepik</a>
+        </p>
+        {% endfor %}
+
+        <a href="#"
+           class="inline-block text-center h-12 w-40 rounded-3xl mt-10 bg-pink-500 text-white font-bold leading-[48px] hover:bg-black transition">
+          LEARN MORE
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- Rahyona end -->
+   <!-- Husanboy -->
+    <div class="contain flex items-center justify-center h-[771px]">
+        <div class="flex gap-10 items-center">
+            <div>
+                <h5 class="text-[20px] font-semibold">Key Benefits of Our Smart Home App</h5>
+                <h2 class="text-[48px] mt-[20px] font-bold leading-[50px]">Unified smart home <br> management</h2>
+                <div class="mt-[20px] leading-[30px]">
+                <span class="font-bold text-[18px]">1. Control Every Device Instantly</span>
+                <p class="text-[17px]">One-tap access to lights, thermostat, security, and more—anywhere, anytime.</p>
+                <span class="font-bold text-[18px]">2. Personalized Scenes & Routines</span>
+                <p class="text-[17px]">"Good Morning" mode brews coffee + opens blinds. "Movie Night" dims lights + <br> locks doors.</p>
+                <span class="font-bold text-[18px]">3. Real-Time Security Alerts</span>
+                <p class="text-[17px]">Get motion detection alerts, camera feeds, and door lock status on your phone.</p>
+                <span class="font-bold text-[18px]">4. Energy Savings on Autopilot</span>
+                <p class="text-[17px]">Smart scheduling cuts bills (e.g., AC off when you leave; lights auto-off at bedtime).</p>
+                </div>
+                <button class="px-[64px] py-[19px] bg-[#fe607c] text-white rounded-[50px] hover:bg-[black] font-bold mt-[40px]" type="submit">LEARN MORE</button>
+            </div>
+            <img class="w-[418px] h-[651px] rounded-[30px]" src="https://assets.nicepagecdn.com/d2cc3eaa/6538925/images/smart-9.jpg" alt="">
+        </div>
+    </div>
+    <!-- Husanboy end -->
+
+
+    <!-- Minura -->
+<div class="h-auto bg-[#dbb5c0] pt-[40px] pb-[60px]">
+    <div
+      class="flex flex-col md:flex-row justify-center items-center gap-[60px] md:gap-[100px] text-center md:text-left">
+
+      <div class="mt-[20px] md:mt-[40px]">
+        <div
+          class="w-[280px] h-[280px] animate-fadeIn3 md:w-[449px] md:h-[449px] rounded-full bg-[#fe607c] flex justify-center items-center mx-auto md:mx-0">
+          <img src="https://assets.nicepagecdn.com/d2cc3eaa/6538925/images/app.png" alt="app" width="200"
+            class="md:w-[340px]">
+        </div>
+      </div>
+
+      <div class="px-[20px] md:px-0">
+        <h5 class="font-bold text-[18px] md:text-[20px] mb-[10px]">Stop managing devices. Start living.</h5>
+        <h2 class="font-bold text-[32px] md:text-[48px] leading-tight">Home with a heart</h2>
+        <p class="mt-[20px] mb-[40px] text-[16px] md:text-[18px] leading-relaxed">
+          Control your entire smart home instantly. An intuitive <br class="hidden md:block">
+          mobile dashboard shows exactly the data you need—all in <br class="hidden md:block">
+          one place. Image from <a class="underline" href="">Freepik</a>
+        </p>
+
+        <div
+          class="flex flex-col md:flex-row items-center justify-center md:justify-start gap-[20px] md:gap-[50px] mb-[40px]">
+          <img class="h-[48px] md:h-[64px]"
+            src="data:image/png;base64,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"
+            alt="">
+          <p class="text-[18px] italic leading-loose">Haptic technology makes life easier for <br> visually impaired
+            people</p>
+        </div>
+        <a class="bg-[#fe607c] px-[80px] py-[20px] font-semibold text-white rounded-[500px] hover:bg-[#000]"
+          href="">Learn more</a>
+      </div>
+    </div>
+  </div>
+
+     <!-- Minura end -->
+
+     <!-- Fazlidin -->
+      <div class="contain w-full h-[186vh]">
+        <div class="w-full h-[432px] flex items-center flex-col">
+                <h2 class="text-[48px] text-center mt-[90px] font-semibold">Mobile app meets the reliable system</h2>
+                <p class="text-center mt-[20px] text-[18px]">Advanced engineering elevates app performance to new heights, delivering seamless comfort that matches your expectations.</p>
+        </div>
+        <div class="w-full h-[940px] bg-[black] relative justify-center items-center flex flex-col">
+                <div class="flex absolute gap-6 top-[170px] translate-y-[-340px] duration-200 transition-transform">
+                        <div class="w-[270px] h-[353px] bg-[#fe607c] rounded-[50px] flex flex-col items-center justify-center">
+                                <div class="border-[10px] border-[white] w-[196px] h-[196px] rounded-[50%] flex flex-col items-center justify-center text-[48px] text-white">
+                                        <h3 class="font-bold">5x</h3>
+                                </div>
+                                <h6 class="text-center text-white font-bold text-[18px] mt-[46px]">FASTER <br> APP LAUNCH</h6>
+                        </div>
+                        <div class="w-[270px] h-[353px] bg-[#fe607c] rounded-[50px] flex flex-col items-center justify-center">
+                                <div class="border-[10px] border-[white] w-[196px] h-[196px] rounded-[50%] flex flex-col items-center justify-center text-[48px] text-white">
+                                        <h3 class="font-bold">17x</h3>
+                                </div>
+                                <h6 class="text-center text-white font-bold text-[18px] mt-[46px]">FASTER <br> APP DOWNLOAD</h6>
+                        </div>
+                        <div class="w-[270px] h-[353px] bg-[#fe607c] rounded-[50px] flex flex-col items-center justify-center">
+                                <div class="border-[10px] border-[white] w-[196px] h-[196px] rounded-[50%] flex flex-col items-center justify-center text-[48px] text-white">
+                                        <h3 class="font-bold">17x</h3>
+                                </div>
+                                <h6 class="text-center text-white font-bold text-[18px] mt-[46px] uppercase">less phone <br> battery usage</h6>
+                        </div>
+                        <div class="w-[270px] h-[353px] bg-[#fe607c] rounded-[50px] flex flex-col items-center justify-center">
+                                <div class="border-[10px] border-[white] w-[196px] h-[196px] rounded-[50%] flex flex-col items-center justify-center text-[48px] text-white">
+                                        <h3 class="font-bold">100%</h3>
+                                </div>
+                                <h6 class="text-center text-white font-bold text-[18px] mt-[46px] uppercase">faster <br> connection</h6>
+                        </div>
+                </div>
+
+
+                <div class="flex items-center mt-[220px] gap-16">
+                        <div class="text-white text-left">
+                                <h5 class="text-[20px]">Your comfort, perfected.</h5>
+                                <h2 class="text-[48px] font-semibold">Live your smart life</h2>
+                                <p class="text-[18px] mt-[40px]">Open the app → master your home. Customizable <br> dashboard for real-time control of all smart devices. Zero <br> setup. Zero clutter. Image from <a class="border-b-[1px] border-[#fe607c] hover:border-[white]" href="#">Freepik</a></p>
+                                <button class="bg-[#fe607c] mt-[43px] text-[14px] rounded-[50px] px-[64px] py-[20px] font-bold hover:bg-[white] hover:text-[#fe607c]">LEARN MORE</button>
+                        </div>
+                        <img class="w-[608px] h-[608px]" src="https://assets.nicepagecdn.com/d2cc3eaa/6538925/images/5654005-min.png" alt="">
+                </div>
+        </div>
+   </div>
+<!-- Fazlidin end -->
+
+
+<!-- Ozodbek -->
+ 
+<section class="flex flex-col items-center justify-center bg-white text-center py-12 mt-[100px]">
+    <h1 class="text-4xl md:text-5xl font-bold mb-2">Get your Smart Home Application</h1>
+    <p class="italic font-light mt-[20px]">Images from <a class="border-b-2 border-red-600" href="#">Vecteezy</a> and <a class="border-b-2 border-red-600" href="#">Freepick</a> </p>
+    <div class="flex mt-[50px] gap-8">
+        <img src="https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/b45b2ec664235522a17ccc50/app.png" class="w-[208px] h-[62px] " alt="">
+        <img src="https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/1ee8a23841625a04b25939ac/playstore.png" class="w-[208px] h-[62px] " alt="">
+    </div>
+    <div>
+        <img src="https://assets.nicepagecdn.com/d2cc3eaa/6538925/images/2-views.png" class="w-[619px] h-[493px] z-10 relative" alt="">
+        <div class="bg-red-400 w-[839px] h-[337px] absolute top-[3900px] left-[270px] rounded-t-[430px]"></div>
+    </div>
+</section>
+<!-- Ozodbek end -->
+
+
+<!-- Islombek -->
+<div class="min-h-screen w-full flex justify-center items-center bg-white">
+    <div class="max-w-6xl w-full flex flex-col md:flex-row gap-12 items-center">
+    <div class="flex-1 max-w-lg">
+        <div class="text-gray-700 text-base font-semibold mb-2">
+          Save Time, Energy, and Money
+        </div>
+        <h1 class="text-4xl font-bold text-gray-900 mb-4">
+          How networks make life easier
+        </h1>
+        <div class="text-black text-[18px] mb-6">
+          Image from <a href="#" class="underline">Freepik</a>
+        </div>
+  <div class="space-y-8">
+          <div class="flex items-center gap-4">
+            <div class="bg-pink-400 rounded-full p-4 flex items-center justify-center">
+              <i class="fa-solid fa-house-lock"></i>
+            </div>
+            <div>
+              <div class="font-bold text-xl text-gray-900">
+                Enhanced Security and Monitoring
+              </div>
+              <div class="text-gray-600 text-base">
+                Sample text. Click to select the Text Element.
+              </div>
+            </div>
+          </div>
+          <hr class="my-4 border-dotted border-gray-300" />
+          <div class="flex items-center gap-4">
+            <div class="bg-pink-400 rounded-full p-4 flex items-center justify-center">
+              <i class="fa-solid fa-house-signal"></i>
+            </div>
+            <div>
+              <div class="font-bold text-xl text-gray-900">
+                Home automation in everyday life
+              </div>
+              <div class="text-gray-600 text-base">
+                Sample text. Click to select the Text Element.
+              </div>
+            </div>
+          </div>
+          <hr class="my-4 border-dotted border-gray-300" />
+          <div class="flex items-center gap-4">
+            <div
+              class="bg-pink-400 rounded-full p-4 flex items-center justify-center"
+            >
+            <i class="fa-solid fa-tv"></i>
+            </div>
+            <div>
+              <div class="font-bold text-xl text-gray-900">
+                Smart entertainment
+              </div>
+              <div class="text-gray-600 text-base">
+                Sample text. Click to select the Text Element.
+              </div>
+            </div>
+          </div>
+          <hr class="my-4 border-dotted border-gray-300" />
+        </div>
+        <div class="mt-10 flex justify-center">
+          <a href="#" class="bg-pink-500 text-white font-bold py-3 px-10 rounded-full shadow hover:bg-pink-600 transition text-lg">LEARN MORE</a>
+        </div>
+      </div>
+      <div class="flex-1 flex justify-center items-center">
+        <img src="https://assets.nicepagecdn.com/d2cc3eaa/6538925/images/manr-thinking-4.jpg" alt="network illustration" class="w-full"/>
+      </div>
+    </div>
+  </div>
+
+</div>
+  <!-- Islombek end -->
+{% endblock %}

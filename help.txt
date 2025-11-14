@@ -1,0 +1,8 @@
+1.python -m venv .muhit
+2..muhit/Scripts/activate
+3.pip install django 
+4.django-admin startproject Base .
+4.django-admin startapp Loyiha .
+5.python manage.py runserver
+# project in app
+iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAAAXNSR0IArs4c6QAADnVJREFUeF7tXQnQdmMZvq60SCaFFJWlpEIZa7JEhMk2oUIhWVMK0UKLhkQ0BpVMmFZLqwhNG9olRSWlBf1JmUo0SSmuzvV73n
